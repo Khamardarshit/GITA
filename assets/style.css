@@ -2,16 +2,42 @@
     text-decoration: none;
     font-size: 25px;
 }
+
 /* .navbar{
     justify-content: space-between !important;
 } */
-:root{
+:root {
     --bs-primary: hsl(48deg 33.33% 97.06% / 80%) !important;
 }
+
 .bg-body-tertiary {
     background-color: var(--bs-primary) !important;
 }
-a{
+
+a {
     color: #333 !important;
 }
 
+.nav-link {
+    font-size: 18px;
+}
+
+.btn-warning {
+    border-radius: 8px;
+    font-weight: 500;
+    background: #c96442 !important;
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 0;
+    background: #ffffff;
+    background: linear-gradient(357deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.11) 50%);
+}
