@@ -28,7 +28,7 @@ a {
     background: #c96442 !important;
 }
 
-.banner {
+.banner {   
     position: relative;
     height: 100vh;
 }
@@ -39,5 +39,5 @@ a {
     inset: 0;
     top: 0;
     background: #ffffff;
-    background: linear-gradient(357deg, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0.11) 50%);
+    background: linear-gradient(357deg, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 0.11) 50%);
 }

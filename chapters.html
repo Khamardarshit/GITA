@@ -22,7 +22,7 @@
                             <a class="logo flex gap-2.5" href="./BHAGVAD-GITA.HTML">
                                 <img alt="Bhagavad Gita p-4" loading="lazy" width="27" height="35" decoding="async"
                                     data-nimg="1" style="margin-left: 20px; color:transparent"
-                                    src="./img/bhagavad-gita.webp">
+                                    src="./img/bhagavad-gita.webp" href="./BHAGVAD-GITA.HTML">
                                 <span class="logo font-bold p-4 mb-5">Bhagavad Gita</span>
                             </a>
                         </li>
@@ -34,7 +34,12 @@
                                 Chapters
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./chapters.html"> chapters</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
 
@@ -77,28 +82,50 @@
         </nav>
     </header>
     <!--  -->
-    <main>
-        <!-- baner -->
-        <div class="banner">
-            <section class="bg-light">
-                        <!-- Image -->
-                        <div class="col-md-12 text-center">
-                            <img src="./img/BHAGVAD-GITA-Banner" style="background-size: cover; width: 100%; height: 100vh;" class="img-fluid" alt="Banner Image">
-                        </div>
+    <div class="container my-5">
+        <div class="row">
 
-                    </div>
+            <!-- LEFT CONTENT -->
+            <div class="col-md-8">
+
+                <!-- Chapter Header -->
+                <div id="chapterHeader" class="mb-4"></div>
+
+                <!-- All verses -->
+                <div id="versesContent"></div>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-between my-5">
+                    <button id="prevChapter" class="btn btn-outline-secondary">
+                        ← Previous Chapter
+                    </button>
+
+                    <button id="nextChapter" class="btn btn-warning text-white">
+                        Next Chapter →
+                    </button>
                 </div>
-                </section>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="col-md-4">
+
+                <img src="./img/1st img.webp" class="img-fluid mb-4" />
+
+                <h6 class="text-muted">VERSES</h6>
+                <div id="verseButtons" class="d-flex flex-wrap gap-2"></div>
+
+            </div>
+
         </div>
-        <!-- chapters -->
-        <div id="chaptersinfo" class="row"></div>
-                
-    </main>
+    </div>
+
     <!--  -->
     <footer></footer>
     </div>
     <script src="./assets/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/geeta.js"></script>
+    <script src="./assets/chapters.js"></script>
 </body>
 
 </html>
