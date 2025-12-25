@@ -1,0 +1,16 @@
+.logo {
+    text-decoration: none;
+}
+/* .navbar{
+    justify-content: space-between !important;
+} */
+:root{
+    --bs-primary: hsl(48deg 33.33% 97.06% / 80%) !important;
+}
+.bg-body-tertiary {
+    background-color: var(--bs-primary) !important;
+}
+a{
+    color: #333 !important;
+}
+
